@@ -7,6 +7,8 @@ Data from [NYC Open Data](https://opendata.cityofnewyork.us) (too big to include
 - [Collision data](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data)
 - [Bicycle Ridership data](https://data.cityofnewyork.us/Transportation/Bicycle-Counts/uczf-rk3c/about_data)
 
+Claude Code Sonnet 4 ran most of this analysis. (And I didn't help. Take this all as directionally correct, and if you're a reporter, check my math.)
+
 ## Overview
 
 This multi-faceted analysis examines NYC pedestrian safety from multiple angles:
@@ -26,7 +28,7 @@ This multi-faceted analysis examines NYC pedestrian safety from multiple angles:
 
 ### Overall Statistics (Current Analysis)
 - **Total Pedestrian Injuries**: 115,657
-- **Total Pedestrian Deaths**: 1,621  
+- **Total Pedestrian Deaths**: 1,621
 - **Overall Fatality Rate**: 1.38%
 - **Trend**: Overall casualties +37% from 2012-2025 (projected)
 
@@ -62,7 +64,7 @@ This multi-faceted analysis examines NYC pedestrian safety from multiple angles:
 # Main consolidated vehicle category analysis
 python pedestrian_analysis_consolidated.py
 
-# Original detailed vehicle type breakdown  
+# Original detailed vehicle type breakdown
 python pedestrian_analysis.py
 
 # Yearly trends analysis (2012-2025)
@@ -146,14 +148,14 @@ pip install pandas matplotlib seaborn numpy
 nyc-pedestrians-2025/
 ├── README.md                                    # This file
 ├── Motor_Vehicle_Collisions_-_Crashes_20250824.csv  # Raw collision data
-├── 
+├──
 ├── # Analysis Scripts
 ├── pedestrian_analysis_consolidated.py         # Main category analysis
 ├── pedestrian_analysis.py                      # Detailed vehicle analysis
 ├── yearly_trends_analysis.py                   # Temporal trends analysis
 ├── bike_vs_ebike_analysis.py                   # Micromobility analysis
 ├── casualty_rate_analysis.py                   # Risk-adjusted analysis
-├── 
+├──
 ├── # Generated Visualizations
 ├── chart1_stacked_casualties.png              # Category casualties
 ├── chart2_fatality_rates.png                  # Fatality rate comparison
@@ -162,12 +164,12 @@ nyc-pedestrians-2025/
 ├── chart5_yearly_trends_by_category.png       # Temporal trends by category
 ├── chart6_bike_vs_ebike_trends.png            # Micromobility trends
 ├── chart7_casualty_rates_vs_ridership.png     # Risk-adjusted bicycle safety
-├── 
+├──
 ├── # Reports and Analysis
 ├── detailed_breakdown_table.md                # Category analysis report
 ├── bike_vs_ebike_analysis.md                  # Micromobility safety report
 ├── NYC_Bicycle_Ridership_Analysis.md          # Ridership data analysis
-├── 
+├──
 └── venv/                                       # Python virtual environment
 ```
 
@@ -179,7 +181,7 @@ Vehicle Categories:
 ├── Passenger Vehicles: Sedan, SUV, Pickup, Passenger Vehicle
 ├── Taxi/Livery: Taxi, Livery Vehicle, For-hire vehicles
 ├── Large/Commercial: Bus, Truck, Box Truck, Dump Truck, Ambulance
-├── Motorcycles: Motorcycle, Motorbike, Moped  
+├── Motorcycles: Motorcycle, Motorbike, Moped
 ├── Bicycles/Scooters: Bike, E-Bike, E-Scooter
 ├── Van: Van variants
 └── Other/Unknown: Unspecified or rare vehicle types
@@ -237,7 +239,7 @@ python pedestrian_analysis_consolidated.py
 # Run temporal trends
 python yearly_trends_analysis.py
 
-# Run micromobility analysis  
+# Run micromobility analysis
 python bike_vs_ebike_analysis.py
 
 # Run risk-adjusted analysis
